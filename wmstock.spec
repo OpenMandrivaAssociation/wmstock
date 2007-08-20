@@ -42,7 +42,7 @@ install -m 755 src/wmstock  %buildroot%{prefix}/bin/
 install -m 755 src/getquote %buildroot%{prefix}/bin/
 
 mkdir -p %buildroot%{prefix}/man/man1
-bzip2 -9 -c src/wmstock.1x > %buildroot%{prefix}/man/man1/wmstock.1x.bz2
+install -m644 src/wmstock.1x %buildroot%{prefix}/man/man1/wmstock.1
 
 install -m 755 -d %buildroot%{_menudir}
 cat << EOF > %buildroot%{_menudir}/%{name}
