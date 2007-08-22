@@ -45,11 +45,16 @@ mkdir -p %buildroot%{prefix}/man/man1
 install -m644 src/wmstock.1x %buildroot%{prefix}/man/man1/wmstock.1
 
 install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{prefix}/bin/%{name} --delay=10 --open=8:30-16:00 \\
-                           --time2next=20 MAKE.PA INTC AMD" icon="%{name}.png"\\
-                 needs="X11" section="Applications/Monitoring" title="WmStock"\\
-                 longtitle="A stock quote data display in a small icon"
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Name=WmStock
+Comment=A stock quote data display in a small icon
+Exec=%{_bindir}/%{name} --delay=10 --open=8:30-16:00 --time2next=20 MAKE.PA INTC AMD
+Icon=%{name}
+Terminal=false
+Type=Application
+Categories=System;X-MandrivaLinux-System-Monitoring
 EOF
 
 
@@ -71,6 +76,6 @@ rm -rf %buildroot
 %{_liconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{prefix}/man/man1/*
 
