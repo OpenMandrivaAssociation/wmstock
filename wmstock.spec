@@ -44,7 +44,7 @@ install -m 755 src/getquote %buildroot%{prefix}/bin/
 mkdir -p %buildroot%{prefix}/man/man1
 install -m644 src/wmstock.1x %buildroot%{prefix}/man/man1/wmstock.1
 
-install -m 755 -d %buildroot%{_menudir}
+install -m 755 -d %buildroot%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Encoding=UTF-8
