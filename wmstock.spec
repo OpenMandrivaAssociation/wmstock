@@ -47,7 +47,6 @@ install -m644 src/wmstock.1x %buildroot%{prefix}/man/man1/wmstock.1
 install -m 755 -d %buildroot%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
-Encoding=UTF-8
 Name=WmStock
 Comment=A stock quote data display in a small icon
 Exec=%{_bindir}/%{name} --delay=10 --open=8:30-16:00 --time2next=20 MAKE.PA INTC AMD
