@@ -53,7 +53,7 @@ Exec=%{_bindir}/%{name} --delay=10 --open=8:30-16:00 --time2next=20 MAKE.PA INTC
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=System;X-MandrivaLinux-System-Monitoring
+Categories=System;X-MandrivaLinux-System-Monitoring;
 EOF
 
 
