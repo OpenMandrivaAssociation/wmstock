@@ -12,7 +12,6 @@ BuildRequires:	libxpm-devel
 BuildRequires:	libxext-devel
 BuildRequires:	libxau-devel
 BuildRequires:	libxdmcp-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 wmstock  is  a  stock  ticker  dock  app  for Window Maker.  It displays
