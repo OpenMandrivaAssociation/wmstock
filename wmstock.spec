@@ -1,7 +1,7 @@
 Summary:  A stock ticker in a small dock app
 Name:		wmstock
 Version: 0.11
-Release: %mkrel 9
+Release: %mkrel 10
 License:	GPL
 Group:		Monitoring
 Source0:	%{name}-%{version}.tar.bz2
