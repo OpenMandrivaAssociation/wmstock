@@ -84,3 +84,59 @@ rm -rf %buildroot
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_mandir}/man1/*
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.11-10mdv2010.0
++ Revision: 434897
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.11-9mdv2009.0
++ Revision: 262092
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.11-8mdv2009.0
++ Revision: 256263
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Jan 03 2008 Olivier Blin <oblin@mandriva.com> 0.11-6mdv2008.1
++ Revision: 140932
+- restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat Sep 15 2007 Gustavo De Nardin <gustavodn@mandriva.com> 0.11-6mdv2008.0
++ Revision: 87164
+- fixed requires
+- finer BuildRequires
+- stop installing in old X11R6 path
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill desktop-file-validate's error: string list key "Categories" in group "Desktop Entry" does not have a semicolon (";") as trailing character
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+* Wed Aug 22 2007 Thierry Vignaud <tvignaud@mandriva.com> 0.11-5mdv2008.0
++ Revision: 69069
+- convert menu entry to XDG
+- use %%mkrel
+- do not opencode spec-helper
+
+
+* Thu Jun 02 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.11-4mdk
+- Rebuild
+
+* Thu Jan 02 2003 HA Quôc-Viêt <viet@mandrakesoft.com> 0.11-3mdk
+- minor spec cleanouts s/$RPM_BUILD_ROOT//tmp/wmstock-buildroot/g
+
+* Tue Jul 31 2001 HA Quôc-Viêt <viet@mandrakesoft.com> 0.11-2mdk
+- Changed default Quotes to include MandrakeSoft, since our successful IPO
+  yesterday :o) 
+- compiled with the new libdockapp revision
+
+* Thu Jul 26 2001 HA Quôc-Viêt <viet@mandrakesoft.com> 0.11-1mdk
+- Initial packaging and release.
+
