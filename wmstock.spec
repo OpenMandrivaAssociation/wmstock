@@ -6,7 +6,7 @@ License:	GPL
 Group:		Monitoring
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
-URL:		http://mattfischer.com/wmstock/
+URL:		https://mattfischer.com/wmstock/
 Requires:	wget
 BuildRequires:	libxpm-devel
 BuildRequires:	libxext-devel
