@@ -8,6 +8,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 URL:		https://mattfischer.com/wmstock/
 Requires:	wget
+BuildRequires:	make
 BuildRequires:	libxpm-devel
 BuildRequires:	libxext-devel
 BuildRequires:	libxau-devel
